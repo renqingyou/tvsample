@@ -31,5 +31,7 @@ public class MyApplication extends Application {
         eventTypeList.add(SensorsDataAPI.AutoTrackEventType.APP_CLICK);
         SensorsDataAPI.sharedInstance(this).enableAutoTrack(eventTypeList);
         SensorsDataAPI.sharedInstance().trackFragmentAppViewScreen();
+        SensorsDataAPI.sharedInstance().setFlushNetworkPolicy(SensorsDataAPI.NetworkType.TYPE_4G);
+        SensorsDataAPI.sharedInstance().setMaxCacheSize(100*1024);
     }
 }
