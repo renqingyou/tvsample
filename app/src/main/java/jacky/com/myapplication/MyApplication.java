@@ -12,7 +12,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         // 数据接收的 URL
-        final String SA_SERVER_URL = "http://sdk-test.datasink.sensorsdata.cn/sa?project=renqingyou&token=95c73ae661f85aa0";
+        final String SA_SERVER_URL = "http://sdktest.datasink.sensorsdata.cn/sa?project=renqingyou&token=21f2e56df73988c7";
 
         // 初始化 SDK
         SensorsDataAPI.sharedInstance(
